@@ -35,8 +35,9 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         
-        var router = new Router();
-        Backbone.history.start();
+        $("#body").html("");
+        //var router = new Router();
+        //Backbone.history.start();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
